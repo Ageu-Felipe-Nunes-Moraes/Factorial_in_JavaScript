@@ -1,53 +1,53 @@
 
-class CalculaFatorial {
+class FactorialCalculate {
     constructor() {
-        this.fatorial = null;
-        this.resultado = 1;
+        this.factorial = null;
+        this.result = 1;
         this.readline = require('readline');
     }
 
-    pergunta(pergunta) {
+    question(question) {
         const rl = this.readline.createInterface({
             input: process.stdin,
             output: process.stdout
         });
 
         return new Promise((resolve, reject) => {
-            rl.question(pergunta, (valor) => {
+            rl.question(question, (value) => {
                 rl.close();
-                resolve(Number(valor)); // Convertendo para número
+                resolve(Number(value)); // Converting for number
             });
         });
     }
 
-    async getValor() {
-        this.fatorial = await this.pergunta("Digite um valor para calcular o fatorial: ");
+    async getValue() {
+        this.factorial = await this.question("Digite um valor para calcular o fatorial: ");
 
-        if (this.fatorial <= 0) {
+        if (this.factorial <= 0) {
             console.log("Entrada inválida. Por favor, insira um número positivo.");
-            await this.getValor(); // Esperando a nova entrada
+            await this.getValue(); // Waiting a new input
         }
     }
 
-    verificaCondicoes() {
-        if (this.fatorial < 0) {
+    checksConditionals() {
+        if (this.factorial < 0) {
             console.log("Valor negativo, portanto inválido.");
         } else {
-            this.imprimeResultado();
+            this.printResult();
         }
     }
 
-    imprimeResultado() {
-        this.resultado = 1;
-        for (let i = 1; i <= this.fatorial; i++) {
-            this.resultado *= i;
+    printResult() {
+        this.result = 1;
+        for (let i = 1; i <= this.factorial; i++) {
+            this.result *= i;
         }
-        console.log(`O resultado de ${this.fatorial} em fatorial é: ${this.resultado}`);
+        console.log(`O resultado de ${this.factorial} em fatorial é: ${this.result}`);
     }
 }
 
 (async () => {
-    let calculadora = new CalculaFatorial();
-    await calculadora.getValor();
-    calculadora.verificaCondicoes();
+    let calculator = new FactorialCalculate();
+    await calculator.getValue();
+    calculator.checksConditionals();
 })();
