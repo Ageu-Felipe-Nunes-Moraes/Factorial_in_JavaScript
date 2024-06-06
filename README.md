@@ -1,39 +1,38 @@
+# Factorial Calculator in JavaScript
 
-# Calculadora de Fatorial em JavaScript
+This is a simple program in JavaScript that calculates the factorial of a non-negative integer.
 
-Este é um simples programa em JavaScript que calcula o fatorial de um número inteiro não negativo.
+## Functionality
 
-## Funcionamento
+The program prompts the user to enter an integer to calculate its factorial. Then, it checks if the entered number is non-negative. If it is, the program calculates the factorial of the number and displays the result. Otherwise, it displays a message indicating that the entered value is invalid.
 
-O programa solicita ao usuário que insira um número inteiro para calcular o fatorial. Em seguida, verifica se o número inserido é positivo. Se for, calcula o fatorial desse número e exibe o resultado. Caso contrário, exibe uma mensagem informando que o valor inserido é inválido.
+## Limitation
 
-## Limitação
+- There is no handling for inputs that are not integers.
 
-- Não há tratamento para entradas que não sejam números inteiros.
+## Installation Requirement
 
-## Requisito de Instalação
+- Node.js
 
-- node.js
+## How to Use
 
-## Como Usar
+1. Run the program in the terminal with `node calculaFatorial.js`.
+2. Enter a non-negative integer when prompted.
+3. The program will calculate and display the factorial of the entered number.
 
-1. Execute o programa no terminal com `node calculaFatorial.js`.
-2. Insira um número inteiro não negativo quando solicitado.
-3. O programa calculará e exibirá o fatorial desse número.
+## How to Contribute
 
-## Como Contribuir
+If you wish to contribute to the development of this program, follow these steps:
 
-Se desejar contribuir para o desenvolvimento deste programa, siga estas etapas:
+1. Fork the repository.
+2. Make your modifications and improvements to the code.
+3. Test your changes to ensure they work correctly.
+4. Submit a pull request describing the changes you made and the reasons for them.
 
-1. Fork o repositório.
-2. Faça suas modificações e melhorias no código.
-3. Teste suas alterações para garantir que funcionem corretamente.
-4. Envie um pull request descrevendo as mudanças que você fez e suas razões para elas.
+## Author
 
-## Autor
+This algorithm was developed by Ageu Felipe Nunes Moraes as part of a personal project. For questions or suggestions, please contact [ageumoraes67@gmail.com](mailto:ageumoraes67@gmail.com).
 
-Este algorítimo foi desenvolvido por Ageu Felipe Nunes Moraes como parte de um projeto pessoal. Para dúvidas ou sugestões, entre em contato pelo e-mail [ageumoraes67@gmail.com](mailto:ageumoraes67@gmail.com).
+## Disclaimer
 
-## Aviso Legal
-
-Este é um projeto de software desenvolvido por um indivíduo e não tem afiliação com outrem.
+This is a software project developed by an individual and is not affiliated with any other entity.
